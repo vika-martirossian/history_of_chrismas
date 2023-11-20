@@ -1,0 +1,58 @@
+22:00:07 DEBUG Selenium Manager binary found at: D:\it materials\automation with python\christmas_history\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+22:00:07 DEBUG Executing process: D:\it materials\automation with python\christmas_history\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --output json
+22:00:07 DEBUG chromedriver not found in PATH
+22:00:07 DEBUG chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+22:00:07 DEBUG Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+22:00:07 DEBUG Output: "\r\r\n\r\r\nVersion=119.0.6045.160\r\r\n\r\r\n\r\r\n\r"
+22:00:07 DEBUG Detected browser: chrome 119.0.6045.160
+22:00:07 DEBUG Required driver: chromedriver 119.0.6045.105
+22:00:07 DEBUG chromedriver 119.0.6045.105 already in the cache
+22:00:07 DEBUG Driver path: C:\Users\vikam\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+22:00:07 DEBUG Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+22:00:07 DEBUG Using driver at: C:\Users\vikam\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+22:00:07 DEBUG Started executable: `C:\Users\vikam\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe` in a child process with pid: 13064
+22:00:08 DEBUG POST http://localhost:54000/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--start-maximized"]}}}}
+22:00:08 DEBUG Starting new HTTP connection (1): localhost:54000
+22:00:09 DEBUG http://localhost:54000 "POST /session HTTP/1.1" 200 0
+22:00:09 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.160","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"C:\\Users\\vikam\\AppData\\Local\\Temp\\scoped_dir13064_1263693003"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:54004"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"3f427fe60961f69bc3e19fb9d6cbb6db"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:09 DEBUG Finished Request
+22:00:09 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/timeouts {"implicit": 10000}
+22:00:09 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/timeouts HTTP/1.1" 200 0
+22:00:09 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:09 DEBUG Finished Request
+22:00:09 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/url {"url": "https://www.history.com/topics/christmas/history-of-christmas"}
+22:00:11 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/url HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/element {"using": "xpath", "value": "//*[@href=\"#saturnalia-and-christmas\"]"}
+22:00:11 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/element HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0E10AE6D2F870B8A29C638FC979D798B_element_43"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "0E10AE6D2F870B8A29C638FC979D798B_element_43"}]}
+22:00:11 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/execute/sync HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/element/0E10AE6D2F870B8A29C638FC979D798B_element_43/click {}
+22:00:11 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/element/0E10AE6D2F870B8A29C638FC979D798B_element_43/click HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/element {"using": "css selector", "value": "[id=\"saturnalia-and-christmas\"]"}
+22:00:11 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/element HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0E10AE6D2F870B8A29C638FC979D798B_element_46"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG GET http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/element/0E10AE6D2F870B8A29C638FC979D798B_element_46/text {}
+22:00:11 DEBUG http://localhost:54000 "GET /session/3f427fe60961f69bc3e19fb9d6cbb6db/element/0E10AE6D2F870B8A29C638FC979D798B_element_46/text HTTP/1.1" 200 0
+22:00:11 DEBUG Remote response: status=200 | data={"value":"Saturnalia and Christmas "} | headers=HTTPHeaderDict({'Content-Length': '37', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:11 DEBUG Finished Request
+22:00:11 DEBUG POST http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/back {}
+22:00:12 DEBUG http://localhost:54000 "POST /session/3f427fe60961f69bc3e19fb9d6cbb6db/back HTTP/1.1" 200 0
+22:00:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:12 DEBUG Finished Request
+22:00:12 DEBUG GET http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db/url {}
+22:00:12 DEBUG http://localhost:54000 "GET /session/3f427fe60961f69bc3e19fb9d6cbb6db/url HTTP/1.1" 200 0
+22:00:12 DEBUG Remote response: status=200 | data={"value":"https://www.history.com/topics/christmas/history-of-christmas"} | headers=HTTPHeaderDict({'Content-Length': '73', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:12 DEBUG Finished Request
+22:00:12 DEBUG DELETE http://localhost:54000/session/3f427fe60961f69bc3e19fb9d6cbb6db {}
+22:00:12 DEBUG http://localhost:54000 "DELETE /session/3f427fe60961f69bc3e19fb9d6cbb6db HTTP/1.1" 200 0
+22:00:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+22:00:12 DEBUG Finished Request
